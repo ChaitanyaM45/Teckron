@@ -15,7 +15,7 @@ export default function OrderForm() {
             quantity: Number(e.target.quantity.value),
         };
 
-        const response = await fetch("https://msme-s.onrender.com/order", {
+        const response = await fetch("https://teckron-msme-s.onrender.com/order", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(order),
@@ -84,4 +84,5 @@ export default function OrderForm() {
         </div>
     );
 }
+
 
