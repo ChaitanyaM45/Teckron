@@ -6,7 +6,7 @@ export default function Bottleneck() {
 
     const checkBottlenecks = async () => {
         setLoading(true);
-        const response = await fetch("https://msme-s.onrender.com/bottleneck");
+        const response = await fetch("https://teckron-msme-s.onrender.com/bottleneck");
         const data = await response.json();
         setIssues(data.bottlenecks);
         setLoading(false);
@@ -45,4 +45,5 @@ export default function Bottleneck() {
         </div>
     );
 }
+
 
