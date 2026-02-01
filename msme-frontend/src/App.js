@@ -6,7 +6,7 @@ export default function App() {
   const [dailyInsight, setDailyInsight] = useState("Loading daily insight...");
 
   useEffect(() => {
-    fetch("https://msme-s.onrender.com/daily-insight")
+    fetch("https://teckron-msme-s.onrender.com/daily-insight")
       .then((res) => res.json())
       .then((data) => {
         if (data?.text) setDailyInsight(data.text);
